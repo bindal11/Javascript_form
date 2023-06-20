@@ -1,0 +1,66 @@
+<!-- Create a form with FirstName, LastName, Email, Phone, Gender- radio, city - selection submission button contact preference -->
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <form id="myForm" onsubmit="test()" method="post" action="/">
+      <div class="form-control">
+         <label for="firstName">First Name:</label>
+         <input type="text" name="firstName" id="firstName">
+      </div>
+      <div class="form-control">
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName">
+      </div>
+      <div class="form-control">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+      </div>
+      <div class="form-control">
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone">
+      </div>
+      <div class="form-control">
+        <label for="gender">Gender</label>
+        <div>
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label>
+        </div>
+       
+      </div>
+      <div class="form-control">
+        <label for="city">City</label>
+        <select name="" id="city">
+          <option value="Bangalore">Bangalore</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label for="contactPreferemce">Contact Preference</label>
+        <div>
+           <input type="checkbox" name="email" id="email"/>
+           <label for="email">Email</label>
+           <input type="checkbox" name="phone" id="phone"/>
+           <label for="phone">Phone</label>
+        </div>
+      </div>
+      <input type="submit" onclick="submitForm(event)">
+    </form>
+  </div>
+
+  
+</body>
+</html>
